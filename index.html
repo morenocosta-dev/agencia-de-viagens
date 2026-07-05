@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsivel.css">
+     <style>
+
+
+
+
+
+
+
+
+.hero{
+    height:100vh;
+    background:url("praia.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+}
+
+.conteudo{
+    position:relative;
+    z-index:1;
+    color:#fff;
+    max-width:700px;
+    padding:20px;
+}
+
+h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:22px;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  margin-bottom: 5%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #0d6efd;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  background: #0d6efd;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.card a:hover {
+  background: #0b5ed7;
+}
+ 
+     .footer{
+    background:#14232b;
+    color:white;
+    padding:45px 8% 20px;
+    font-family:Arial, sans-serif;
+}
+
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.footer-col h3{
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+
+.footer-col p{
+    margin:5px 0;
+    color:#c8c8c8;
+    font-size:14px;
+}
+
+
+.footer-col a{
+    text-decoration:none;
+    color:#c8c8c8;
+    margin:5px 0;
+    font-size:14px;
+}
+
+
+.social{
+    display:flex;
+    gap:12px;
+    margin:15px 0;
+}
+
+
+.social a{
+    width:28px;
+    height:28px;
+    border:1px solid #777;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+
+.footer small{
+    color:#aaa;
+}
+
+
+.copyright{
+    border-top:1px solid #39464d;
+    text-align:center;
+    margin-top:35px;
+    padding-top:20px;
+    color:#aaa;
+    font-size:13px;
+}
+
+
+/* Responsivo */
+@media(max-width:700px){
+
+.footer-container{
+    flex-direction:column;
+}
+
+}
+
+
+        </style>
+</head>
+<body>
+     <nav class="navbar">
+
+    <img class="logo-img" src="logo.jpg">
+
+    <div id="logo">
+        <h2>AGENCIA Viagens</h2>
+    </div>
+
+
+    <div class="menu-icon" onclick="abrirMenu()">
+        ☰
+    </div>
+
+
+    <div class="menu" id="menu">
+
+        <a href="index.html">Início</a>
+        <a href="serviços.html">Serviços</a>
+        <a href="Quem somos.html">Sobre nós</a>
+        <a id="botao" href="contacto.html">Contacto</a>
+
+    </div>
+
+</nav>
+
+
+<script>
+function abrirMenu(){
+
+let menu = document.getElementById("menu");
+
+menu.classList.toggle("ativo");
+
+}
+</script>
+   
+<section class="hero">
+    <div class="conteudo">
+       <h2 style=" font-family:Lobster, sans-ser; font-size: 70px;color: white;">Explore o mundo connosco</h2>
+      <p style="font-size: 25px;">
+        Tratamos o seu visto e reservamos o seu bilhete de viagem
+      </p>
+      <p  style="font-size: 25px;">Tratamos visto para todos os países do mundo</p>
+      <button><a style="text-decoration: none;color: white;" href="contacto.html">Selecionar Atendimento</a></button>
+    </div>
+</section>
+
+
+
+ <h2 style="margin-top: 200px;font-size: 70px;text-align: center;font-family:Lobster, sans-ser;color: blue;">Nossos Serviços</h2>
+
+<div class="cards">
+   
+  <div class="card">
+    <div class="icon">🎫</div>
+    <h3>Tratamento de Bilhete</h3>
+    <p>
+      Emitimos, alteramos e gerimos bilhetes aéreos com rapidez e segurança,
+      garantindo a melhor opção para a sua viagem.
+    </p>
+    <a style="text-decoration: none;" href="serviços.html">Saiba Mais</a>
+  </div>
+
+  <div class="card">
+    <div class="icon">🛂</div>
+    <h3>Visto de Turismo</h3>
+    <p>
+      Auxiliamos em todo o processo de obtenção do visto de turismo para diversos
+      destinos, com suporte completo na documentação.
+    </p>
+    <a style="text-decoration: none;" href="serviços.html">Saiba Mais</a>
+  </div>
+
+  <div class="card">
+    <div class="icon">💼</div>
+    <h3>Visto de Trabalho</h3>
+    <p>
+      Prestamos consultoria e acompanhamento para pedidos de visto de trabalho,
+      facilitando o seu processo de imigração.
+    </p>
+    <a style="text-decoration: none;" href="serviços.html">Saiba Mais</a>
+  </div>
+</div>
+
+
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Agencia de Viagens</h3>
+            <p>Criado em Angola com dedicação.</p>
+
+            <div class="social">
+                <a href="#">Ⓕ</a>
+                <a href="#">♪</a>
+                <a href="#">☏</a>
+            </div>
+
+            <small>@agenciadeviagens</small>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>+244 924 588 356</p>
+             <p>+244 926 719 838</p>
+            <p>agenciadeviagens@gmail.com</p>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Horário</h3>
+            <p>Domingo a Domingo</p>
+            <p>8h00 — 21h00</p>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Navegar</h3>
+            <a href="#">Inicío</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contacto</a>
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 agencia de viagens — Qualidade que se sente.
+    </div>
+
+ 
+   <a class="whats" target="_blank" href="https://wa.me/244924588356?text=ol%C3%A1%2C%20retirei%20o%20seu%20contacto%20no%20site!"><img style="width: 70px; margin-bottom: 30px;" src="whats.png"></a>
+    </header>
+
+</body>
+</html>

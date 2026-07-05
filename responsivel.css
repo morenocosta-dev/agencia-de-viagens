@@ -1,0 +1,277 @@
+/* ===========================
+   RESPONSIVIDADE COMPLETA
+=========================== */
+
+
+*{
+    max-width:100%;
+}
+
+
+.logo-img{
+
+    width:70px;
+    border-radius:15px;
+
+}
+
+
+
+.menu-icon{
+
+    display:none;
+    font-size:35px;
+    cursor:pointer;
+
+}
+
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+
+.navbar{
+
+    flex-wrap:wrap;
+    padding:15px;
+
+}
+
+
+#logo h2{
+
+    font-size:38px !important;
+}
+
+
+.menu a{
+
+    font-size:17px;
+
+}
+
+
+
+.hero h1,
+.hero h2{
+
+    font-size:45px !important;
+
+}
+
+
+
+.cards,
+.services{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.form-container{
+
+    width:90%;
+
+}
+
+
+
+}
+
+
+
+
+/* CELULAR */
+
+
+@media(max-width:600px){
+
+
+.navbar{
+
+    height:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:relative;
+
+}
+
+
+
+.logo-img{
+
+    width:50px;
+
+}
+
+
+
+#logo h2{
+
+    font-size:25px !important;
+    margin:0;
+
+}
+
+
+
+/* aparece só no celular */
+
+.menu-icon{
+
+    display:block;
+
+}
+
+
+
+/* esconde menu */
+
+.menu{
+
+    display:none;
+    position:absolute;
+    top:80px;
+    left:0;
+    width:100%;
+    background:white;
+    z-index:999;
+    text-align:center;
+    padding:20px;
+
+}
+
+
+/* abre quando clicar */
+
+.menu.ativo{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.menu a{
+
+    padding:15px;
+    font-size:18px;
+
+}
+
+
+
+#botao{
+
+    margin:10px auto;
+
+}
+
+
+/* Hero */
+
+.hero{
+
+    height:75vh;
+
+}
+
+
+
+.hero h1,
+.hero h2{
+
+    font-size:32px !important;
+
+}
+
+
+
+.hero p{
+
+    font-size:16px !important;
+
+}
+
+
+
+/* Cards */
+
+.cards,
+.services{
+
+    grid-template-columns:1fr;
+    padding:20px;
+
+}
+
+
+
+.card{
+
+    width:100%;
+
+}
+
+
+
+/* Form */
+
+.form-container{
+
+    width:95%;
+    padding:20px;
+
+}
+
+
+
+.form-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.full{
+
+    grid-column:auto;
+
+}
+
+
+input,
+select,
+textarea{
+
+    width:100%;
+
+}
+
+
+
+/* Footer */
+
+.footer-container{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+
+.social{
+
+    justify-content:center;
+
+}
+
+
+
+}

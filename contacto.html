@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="responsivel.css">
+   <style>
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+.form-container{
+    max-width:850px;
+    margin:5% auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 25px #ddd;
+}
+
+.title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.number{
+    width:35px;
+    height:35px;
+    background:blue;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+input,select,textarea{
+    padding:15px;
+    border:none;
+    background:#f1f1f1;
+    border-radius:25px;
+}
+
+textarea{
+    height:100px;
+    resize:none;
+}
+
+.full{
+    grid-column:1/3;
+}
+
+.payment-box{
+    border:2px solid #54c7b0;
+    padding:20px;
+    border-radius:15px;
+}
+
+button{
+    width:100%;
+    margin-top:25px;
+    padding:16px;
+    border:none;
+    border-radius:30px;
+    background:#2bb673;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+@media(max-width:700px){
+.form-grid{
+    grid-template-columns:1fr;
+}
+
+.full{
+    grid-column:auto;
+}
+}
+
+ .footer{
+    background:#14232b;
+    color:white;
+    padding:45px 8% 20px;
+    font-family:Arial, sans-serif;
+}
+
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.footer-col h3{
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+
+.footer-col p{
+    margin:5px 0;
+    color:#c8c8c8;
+    font-size:14px;
+}
+
+
+.footer-col a{
+    text-decoration:none;
+    color:#c8c8c8;
+    margin:5px 0;
+    font-size:14px;
+}
+
+
+.social{
+    display:flex;
+    gap:12px;
+    margin:15px 0;
+}
+
+
+.social a{
+    width:28px;
+    height:28px;
+    border:1px solid #777;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+
+.footer small{
+    color:#aaa;
+}
+
+
+.copyright{
+    border-top:1px solid #39464d;
+    text-align:center;
+    margin-top:35px;
+    padding-top:20px;
+    color:#aaa;
+    font-size:13px;
+}
+
+
+/* Responsivo */
+@media(max-width:700px){
+
+.footer-container{
+    flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+         <nav class="navbar">
+
+    <img class="logo-img" src="logo.jpg">
+
+    <div id="logo">
+        <h2>AGENCIA Viagens</h2>
+    </div>
+
+
+    <div class="menu-icon" onclick="abrirMenu()">
+        ☰
+    </div>
+
+
+    <div class="menu" id="menu">
+
+        <a href="index.html">Início</a>
+        <a href="serviços.html">Serviços</a>
+        <a href="Quem somos.html">Sobre nós</a>
+        <a id="botao" href="contacto.html">Contacto</a>
+
+    </div>
+
+</nav>
+
+
+<script>
+function abrirMenu(){
+
+let menu = document.getElementById("menu");
+
+menu.classList.toggle("ativo");
+
+}
+</script>
+
+<div class="form-container">
+
+<div class="title">
+<div class="number">1</div>
+<h2>Detalhes do pedido</h2>
+</div>
+
+
+<div class="form-grid">
+
+<div class="input-box">
+<label>NOME COMPLETO *</label>
+<input id="nome" type="text" placeholder="O seu nome">
+</div>
+
+
+<div class="input-box">
+<label>WHATSAPP *</label>
+<input id="telefone" type="text" placeholder="+244 9XX XXX XXX">
+</div>
+
+
+<div class="input-box">
+<label>CIDADE / BAIRRO</label>
+<input id="cidade" type="text" placeholder="Luanda, Talatona...">
+</div>
+
+
+<div class="input-box">
+<label>Serviço</label>
+
+<select id="servico">
+<option>Tratamento de Bilhete</option>
+<option>Passaporte</option>
+<option>Visto de Trabalho</option>
+<option>Visto de Estudante</option>
+<option>Visto de Saúde</option>
+</select>
+
+</div>
+
+
+<div class="input-box">
+<label>O que deseja?</label>
+<input id="pedido" type="text" placeholder="Ex: Bilhete, visto...">
+</div>
+
+
+<div class="input-box">
+<label>Número de pessoas</label>
+<input id="pessoas" type="number" placeholder="Ex: 2">
+</div>
+
+
+<div class="input-box full">
+<label>OBSERVAÇÕES</label>
+<textarea id="obs" placeholder="Alguma preferência especial?"></textarea>
+</div>
+
+
+</div>
+
+
+<div class="title" style="margin-top:40px;">
+<div class="number">2</div>
+<h2>Método de pagamento</h2>
+</div>
+
+
+<div class="payment-box">
+<strong>WhatsApp</strong>
+<p>Pedido enviado por mensagem</p>
+</div>
+
+
+<button onclick="enviarWhatsApp()">
+Enviar pedido pelo WhatsApp
+</button>
+
+
+</div>
+
+
+
+<script>
+
+function enviarWhatsApp(){
+
+let nome=document.getElementById("nome").value;
+let telefone=document.getElementById("telefone").value;
+let cidade=document.getElementById("cidade").value;
+let servico=document.getElementById("servico").value;
+let pedido=document.getElementById("pedido").value;
+let pessoas=document.getElementById("pessoas").value;
+let obs=document.getElementById("obs").value;
+
+
+let mensagem = 
+`Olá, gostaria de fazer um pedido pelo site.
+
+*Dados do cliente*
+
+Nome: ${nome}
+
+WhatsApp: ${telefone}
+
+Cidade/Bairro: ${cidade}
+
+Serviço: ${servico}
+
+O que deseja: ${pedido}
+
+Número de pessoas: ${pessoas}
+
+Observações:
+${obs}`;
+
+
+let numero="244924588356";
+
+window.open(
+"https://wa.me/"+numero+"?text="+encodeURIComponent(mensagem),
+"_blank"
+);
+
+}
+
+</script>
+
+
+ <footer style="margin-top: 5%;" class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Agenciaviagens</h3>
+            <p>Criado em Angola com dedicação.</p>
+
+            <div class="social">
+                <a href="#">Ⓕ</a>
+                <a href="#">♪</a>
+                <a href="#">☏</a>
+            </div>
+
+            <small>@agenciadeviagens</small>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>+244 924 588 356</p>
+             <p>+244 926 719 838</p>
+            <p>agenciadeviagens@gmail.com</p>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Horário</h3>
+            <p>Domingo a Domingo</p>
+            <p>8h00 — 21h00</p>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Navegar</h3>
+            <a href="#">Inicío</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Contacto</a>
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 AGENCIA VIAGENS — Qualidade que se sente.
+    </div>
+ </footer>
+
+</body>
+</html>

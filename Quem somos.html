@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem somos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsivel.css">
+</head>
+<body>
+        <nav class="navbar">
+
+    <img class="logo-img" src="logo.jpg">
+
+    <div id="logo">
+        <h2>AGENCIA Viagens</h2>
+    </div>
+
+
+    <div class="menu-icon" onclick="abrirMenu()">
+        ☰
+    </div>
+
+
+    <div class="menu" id="menu">
+
+        <a href="index.html">Início</a>
+        <a href="serviços.html">Serviços</a>
+        <a href="Quem somos.html">Sobre nós</a>
+        <a id="botao" href="contacto.html">Contacto</a>
+
+    </div>
+
+</nav>
+
+
+<script>
+function abrirMenu(){
+
+let menu = document.getElementById("menu");
+
+menu.classList.toggle("ativo");
+
+}
+</script>
+</body>
+</html>

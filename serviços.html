@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Serviços</title>
+    <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="responsivel.css">
+    <style>
+
+.hero{
+    height:55vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+.services{
+    padding:70px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0066cc;
+}
+
+.card p{
+    color:#666;
+    line-height:1.6;
+}
+
+.about{
+    padding:70px 10%;
+    text-align:center;
+    background:white;
+}
+
+.about h2{
+    color:#0066cc;
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.about p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#0066cc;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#004999;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}
+
+
+   .footer{
+    background:#14232b;
+    color:white;
+    padding:45px 8% 20px;
+    font-family:Arial, sans-serif;
+}
+
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+}
+
+
+.footer-col h3{
+    font-size:16px;
+    margin-bottom:15px;
+}
+
+
+.footer-col p{
+    margin:5px 0;
+    color:#c8c8c8;
+    font-size:14px;
+}
+
+
+.footer-col a{
+    text-decoration:none;
+    color:#c8c8c8;
+    margin:5px 0;
+    font-size:14px;
+}
+
+
+.social{
+    display:flex;
+    gap:12px;
+    margin:15px 0;
+}
+
+
+.social a{
+    width:28px;
+    height:28px;
+    border:1px solid #777;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+}
+
+
+.footer small{
+    color:#aaa;
+}
+
+
+.copyright{
+    border-top:1px solid #39464d;
+    text-align:center;
+    margin-top:35px;
+    padding-top:20px;
+    color:#aaa;
+    font-size:13px;
+}
+
+
+/* Responsivo */
+@media(max-width:700px){
+
+.footer-container{
+    flex-direction:column;
+}
+
+}
+
+
+    </style>
+</head>
+<body>
+      <nav class="navbar">
+
+    <img class="logo-img" src="logo.jpg">
+
+    <div id="logo">
+        <h2>AGENCIA Viagens</h2>
+    </div>
+
+
+    <div class="menu-icon" onclick="abrirMenu()">
+        ☰
+    </div>
+
+
+    <div class="menu" id="menu">
+
+        <a href="index.html">Início</a>
+        <a href="serviços.html">Serviços</a>
+        <a href="Quem somos.html">Sobre nós</a>
+        <a id="botao" href="contacto.html">Contacto</a>
+
+    </div>
+
+</nav>
+
+
+<script>
+function abrirMenu(){
+
+let menu = document.getElementById("menu");
+
+menu.classList.toggle("ativo");
+
+}
+</script>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1 style="font-family:Lobster, sans-ser;">Os Nossos Serviços</h1>
+            <p>Planeamos a sua viagem para que viva experiências inesquecíveis.</p>
+        </div>
+    </section>
+
+    <section class="services">
+
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h3>Pacotes Turísticos</h3>
+            <p>Pacotes nacionais e internacionais com os melhores preços.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✈</div>
+            <h3>Passagens Aéreas</h3>
+            <p>Reservamos voos para qualquer destino com segurança e rapidez.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏨</div>
+            <h3>Reserva de Hotéis</h3>
+            <p>Hotéis confortáveis e bem localizados para toda a família.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚗</div>
+            <h3>Aluguer de Viaturas</h3>
+            <p>Carros modernos para tornar a sua viagem mais confortável.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛂</div>
+            <h3>Vistos</h3>
+            <p>Auxiliamos no processo de obtenção de vistos para vários países.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🧳</div>
+            <h3>Seguro de Viagem</h3>
+            <p>Proteção completa para viajar com tranquilidade.</p>
+        </div>
+
+ <div class="card">
+            <div class="icon">🌍</div>
+            <h3>Pacotes Turísticos</h3>
+            <p>Pacotes nacionais e internacionais com os melhores preços.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">✈</div>
+            <h3>Passagens Aéreas</h3>
+            <p>Reservamos voos para qualquer destino com segurança e rapidez.</p>
+        </div>
+
+    </section>
+
+    <section class="about">
+        <h2 style="margin-top: 50px;font-size: 70px;text-align: center;font-family:Lobster, sans-ser;color: blue;">Por quê escolher-nos?</h2>
+        <p>
+            Somos uma agência especializada em viagens nacionais e internacionais,
+            oferecendo atendimento personalizado, preços competitivos e suporte
+            durante toda a sua viagem.
+        </p>
+
+        <a href="contacto.html" class="btn">Solicitar Orçamento</a>
+    </section>
+
+ <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Agencia de Viagem</h3>
+            <p>Feito em Angola com dedicação e carinho.</p>
+
+            <div class="social">
+                <a href="#">Ⓕ</a>
+                <a href="#">♪</a>
+                <a href="#">☏</a>
+            </div>
+
+            <small>@agenciadeviagens</small>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Contacto</h3>
+            <p>+244 924 588 356</p>
+             <p>+244 926 719 838</p>
+            <p>agenciadeviagens@gmail.com</p>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Horário</h3>
+            <p>Domingo a Domingo</p>
+            <p>8h00 — 21h00</p>
+        </div>
+
+
+        <div class="footer-col">
+            <h3>Navegar</h3>
+            <a href="#">Início</a>
+            <a href="#">Serviços</a>
+            <a href="#">sobre nós</a>
+            <a href="#">Contacto</a>
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2025 Agencia de Viagem — Qualidade que se sente.
+    </div>
+</footer>
+
+
+
+</body>
+</html>
