@@ -94,3 +94,13 @@ button{
     right: 5px;
     width: 100px;
 }
+
+
+@view-transition{
+    navigation:auto
+}
+
+::view-transition-group(:root){
+    animation-duration: 1s;
+}
+
