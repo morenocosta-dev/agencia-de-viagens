@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Serviços</title>
+    <title>Vistos</title>
     <link rel="stylesheet" href="estilo.css">
-     <link rel="stylesheet" href="responsivel.css">
-    <style>
-
-.hero{
+    <link rel="stylesheet" href="responsivel.css">
+<style>
+    .hero{
     height:55vh;
     background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
     url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
@@ -30,74 +29,75 @@
     font-size:20px;
 }
 
-.services{
+
+.titulo{
+    text-align: center;
+   
+}
+
+
+.galeria{
     padding:70px 8%;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
     gap:30px;
 }
 
 .card{
-    background:white;
-    padding:35px;
+    background:#fff;
     border-radius:15px;
-    text-align:center;
+    overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.1);
     transition:.3s;
+    display:flex;
+    flex-direction:column;
+    height:100%;
 }
 
 .card:hover{
     transform:translateY(-10px);
 }
 
-.icon{
-    font-size:55px;
-    margin-bottom:20px;
+.card img{
+    width:100%;
+    height:150px;      /* Todas as imagens terão a mesma altura */
+    object-fit:cover;  /* Mantém a imagem bonita sem deformar */
+    display:block;
 }
 
-.card h3{
-    margin-bottom:15px;
+.info{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    flex:1;
+    text-align:center;
+}
+
+.info h3{
     color:#0066cc;
+    margin-bottom:10px;
 }
 
-.card p{
+.info p{
     color:#666;
     line-height:1.6;
 }
 
-.about{
-    padding:70px 10%;
-    text-align:center;
-    background:white;
+@media (max-width:768px){
+
+.galeria{
+    grid-template-columns:1fr;
+    gap:20px;
 }
 
-.about h2{
-    color:#0066cc;
-    margin-bottom:20px;
-    font-size:35px;
+.card img{
+   height: 150px;
 }
 
-.about p{
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-    margin-bottom:30px;
 }
-
-.btn{
-    display:inline-block;
-    background:#0066cc;
-    color:white;
-    padding:15px 35px;
-    text-decoration:none;
-    border-radius:30px;
-    transition:.3s;
-}
-
-.btn:hover{
-    background:#004999;
-}
-
+    
+    
 footer{
     background:#222;
     color:white;
@@ -211,12 +211,11 @@ nav ul{
 }
 
 }
+</style>
 
-
-    </style>
 </head>
 <body>
-      <nav class="navbar">
+     <nav class="navbar">
 
     <img class="logo-img" src="logo.jpg">
 
@@ -252,75 +251,104 @@ menu.classList.toggle("ativo");
 }
 </script>
 
-    <section class="hero">
+
+ <section class="hero">
         <div class="hero-text">
-            <h1 style="font-family:Lobster, sans-ser;">Os Nossos Serviços</h1>
-            <p>Planeamos a sua viagem para que viva experiências inesquecíveis.</p>
+            <h1 style="font-family:Lobster, sans-ser;">Vistos Emitidos</h1>
+            <p>Ao longo dos anos ajudámos centenas de clientes a realizar o sonho de viajar, estudar e trabalhar no exterior.</p>
+            <p>Veja alguns dos vistos emitidos pela nossa empresa.</p>
         </div>
     </section>
 
-    <section class="services">
+<div class="titulo">
+    <h1 style="margin-top: 100px;font-size: 60px;text-align: center;font-family:Lobster, sans-ser;color: blue;">Galeria de Serviços</h1>
+    <p>Resultados reias dos nossos serviços</p>
+</div>
 
-        <div class="card">
-            <div class="icon">🌍</div>
-            <h3>Pacotes Turísticos</h3>
-            <p>Pacotes nacionais e internacionais com os melhores preços.</p>
-        </div>
+<div class="galeria">
 
-        <div class="card">
-            <div class="icon">✈</div>
-            <h3>Passagens Aéreas</h3>
-            <p>Reservamos voos para qualquer destino com segurança e rapidez.</p>
-        </div>
+<div class="card">
+<img src="1.png" alt="">
+<div class="info">
+<h3>Visto de Trabalho</h3>
+<p>Processo aprovado com sucesso para um cliente internacional.</p>
+</div>
+</div>
 
-        <div class="card">
-            <div class="icon">🏨</div>
-            <h3>Reserva de Hotéis</h3>
-            <p>Hotéis confortáveis e bem localizados para toda a família.</p>
-        </div>
+<div class="card">
+<img src="2.png" alt="">
+<div class="info">
+<h3>Visto de Turismo</h3>
+<p>Emissão concluída para viagem internacional.</p>
+</div>
+</div>
 
-        <div class="card">
-            <div class="icon">🚗</div>
-            <h3>Aluguer de Viaturas</h3>
-            <p>Carros modernos para tornar a sua viagem mais confortável.</p>
-        </div>
+<div class="card">
+<img src="3.png" alt="">
+<div class="info">
+<h3>Visto de Estudante</h3>
+<p>Documentação tratada e aprovada com sucesso.</p>
+</div>
+</div>
 
-        <div class="card">
-            <div class="icon">🛂</div>
-            <h3>Vistos</h3>
-            <p>Auxiliamos no processo de obtenção de vistos para vários países.</p>
-        </div>
+<div class="card">
+<img src="4.png" alt="">
+<div class="info">
+<h3>Visto de Formação</h3>
+<p>Cliente preparado para participar em formação no exterior.</p>
+</div>
+</div>
 
-        <div class="card">
-            <div class="icon">🧳</div>
-            <h3>Seguro de Viagem</h3>
-            <p>Proteção completa para viajar com tranquilidade.</p>
-        </div>
 
- <div class="card">
-            <div class="icon">📘</div>
-            <h3>Renoção de Vistos</h3>
-            <p>Renove o seu visto com segurança e tranquilidade. A nossa equipe presta assistencia na organização.</p>
-        </div>
+<div class="card">
+<img src="5.jpg" alt="">
+<div class="info">
+<h3>Visto de Trabalho</h3>
+<p>Processo aprovado com sucesso para um cliente internacional.</p>
+</div>
+</div>
 
-        <div class="card">
-            <div class="icon">🎓✈️</div>
-            <h3>Visto de Formação</h3>
-            <p>Invista no seu futuro com o visto de formação. Prestamos assistencia completa na preparação dos documentos.</p>
-        </div>
+<div class="card">
+<img src="7.jpg" alt="">
+<div class="info">
+<h3>Visto de Turismo</h3>
+<p>Emissão concluída para viagem internacional.</p>
+</div>
+</div>
 
-    </section>
+<div class="card">
+<img src="8.jpg" alt="">
+<div class="info">
+<h3>Visto de Estudante</h3>
+<p>Documentação tratada e aprovada com sucesso.</p>
+</div>
+</div>
 
-    <section class="about">
-        <h2 style="margin-top: 50px;font-size: 70px;text-align: center;font-family:Lobster, sans-ser;color: blue;">Por quê escolher-nos?</h2>
-        <p>
-            Somos uma agência especializada em viagens nacionais e internacionais,
-            oferecendo atendimento personalizado, preços competitivos e suporte
-            durante toda a sua viagem.
-        </p>
+<div class="card">
+<img src="9.jpg" alt="">
+<div class="info">
+<h3>Visto de Formação</h3>
+<p>Cliente preparado para participar em formação no exterior.</p>
+</div>
+</div>
 
-        <a href="contacto.html" class="btn">Solicitar Orçamento</a>
-    </section>
+
+<div class="card">
+<img src="10.jpg" alt="">
+<div class="info">
+<h3>Visto de Turismo</h3>
+<p>Emissão concluída para viagem internacional.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="11.jpg" alt="">
+<div class="info">
+<h3>Visto de Estudante</h3>
+<p>Documentação tratada e aprovada com sucesso.</p>
+</div>
+</div>
+</div>
 
  <footer class="footer">
     <div class="footer-container">
@@ -369,8 +397,6 @@ menu.classList.toggle("ativo");
         © 2025 Agencia de Viagem — Qualidade que se sente.
     </div>
 </footer>
-
-
 
 </body>
 </html>
