@@ -12,6 +12,17 @@ body{
      overflow-x: hidden;
 }
 
+/* Animação de entrada */
+.animar {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity .8s ease, transform .8s ease;
+}
+
+.animar.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .navbar{
     display: flex;
