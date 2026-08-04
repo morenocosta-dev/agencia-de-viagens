@@ -7,11 +7,14 @@
     <meta name="description"content="A Ac agencia de viagens e turismo oferece emissão de passagens, vistos, reservas de hotéis, seguros de viagem e outros serviços para tornar a sua viagem mais segura e tranquila.">
     <meta name="keywords"content="fornecemos passaportes e vistos de trabalho, estudante, turismo, saúde, bilhetes de viagens,agencia de viagens e turismo, em Angola">
     <meta name="author"content="Moreno Costa">
-    <title>Home</title>
+    <meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0d3b66">
+<link rel="stylesheet" href="estilo.css">
+    <title>AC Agencia de Viagens</title>
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="responsivel.css">
      <style>
-.hero{
+/*.hero{
     height:100vh;
     background:url("praia.jpg") center center/cover no-repeat;
     display:flex;
@@ -26,6 +29,42 @@
     position:absolute;
     inset:0;
     background:rgba(0,0,0,.45);
+}
+    */
+
+.hero{
+    height:80vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("praia1.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    background: #0d6efd;
+    color:black;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    opacity: 1;
+}
+
+.btn:hover{
+   opacity: 0.7;
 }
 
 .conteudo{
@@ -184,11 +223,10 @@ p{
 }
 
 }
-
-
-        </style>
+</style>
 </head>
 <body>
+
      <nav class="navbar">
 
     <img class="logo-img" src="logo.jpg">
@@ -226,18 +264,15 @@ menu.classList.toggle("ativo");
    
 <section class="hero">
     <div class="conteudo">
-       <h2 style=" font-family:Lobster, sans-ser; font-size: 70px;color: white;">Explore o mundo connosco</h2>
-      <p style="font-size: 25px;">
-        Tratamos o seu visto e reservamos o seu bilhete de viagem
-      </p>
-      <p  style="font-size: 25px;">Tratamos visto para todos os países do mundo</p>
-      <button><a style="text-decoration: none;color: white;" href="contacto.html">Selecionar Atendimento</a></button>
-    </div>
+       <h1 style=" font-family:Lobster, sans-ser;">Explore o mundo connosco</h1>
+      <p >Tratamos o seu visto e reservamos o seu bilhete de viagem</p>
+      <p >Tratamos visto para todos os países do mundo</p>
+     <a class="btn" href="contacto.html">Selecionar Atendimento</a>
 </section>
 
 
 
- <h2 style="margin-top: 200px;font-size: 60px;text-align: center;font-family:Lobster, sans-ser;color: blue;">Nossos Serviços</h2>
+ <h2 style="margin-top: 200px;font-size: 60px;text-align: center;font-family:Lobster, sans-ser;color: #0d6efd;">Nossos Serviços</h2>
 
 <div class="cards">
    

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    box-sizing: border-box;
+        margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
     padding-left: 0;
 }
  
@@ -10,6 +13,7 @@ body{
      color: var(--cream);
      background: var(--black);
      overflow-x: hidden;
+      background:#f5f5f5;
 }
 
 /* Animação de entrada */
@@ -24,6 +28,7 @@ body{
 }
 
 .navbar{
+      border-bottom: 2px solid  #0d6efd;
     display: flex;
     flex-flow: row wrap;
    height: 100%;
@@ -49,10 +54,11 @@ button{
    }
  
 #logo h2{
+    font-size: 30px;
     flex: 20%;
     margin-left:10px;
      font-family: "Lobster", sans-ser;
-     color: blue;
+     color: #0d6efd;
 }
 
 #logo{
@@ -80,18 +86,19 @@ button{
 }
 
 #botao{
-    background: blue;
+    background: #0d6efd;
     padding: 10px 25px;
     color: white;
     border-radius: 30px;
     margin-right: 10%;
     margin-left: 5%;
+    opacity: 1;
 }
 
 #botao:hover{
     border: none;
-   color: blue;
-   background: white;
+    opacity: 0.7;
+  
 }
 
 .inic{
