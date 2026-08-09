@@ -14,24 +14,6 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="responsivel.css">
      <style>
-/*.hero{
-    height:100vh;
-    background:url("praia.jpg") center center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    position:relative;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,.45);
-}
-    */
-
 .hero{
     height:80vh;
     background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url("praia1.jpg");
@@ -754,10 +736,24 @@ p{
 }
 
 }
+.moreno{
+    padding: 15px 65px;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+.moreno:hover{
+    color: #003566;
+   background-color: white;
+   transform: translatey(-3px);
+}
+
 </style>
 </head>
 <body>
-
      <nav class="navbar">
 
     <img class="logo-img" src="logo.jpg">
@@ -815,6 +811,7 @@ menu.classList.toggle("ativo");
                 <a href="contacto.html" class="btn btn-outline">
                     Fale connosco
                 </a>
+                <a class="btn moreno" href="#sobre">Sobre</a>
             </div>
         </div>
     </section>
@@ -907,8 +904,8 @@ menu.classList.toggle("ativo");
 
             <div class="about-image"></div>
 
-            <div class="about-content">
-                <span>SOBRE o Ac Viagens e Turismo</span>
+               <div class="about-content">
+                <span> <a style="text-decoration: none;" href="#sobre"></a>SOBRE o Ac Viagens e Turismo</a></span>
 
                 <h2>Transformamos sonhos em viagens.</h2>
 

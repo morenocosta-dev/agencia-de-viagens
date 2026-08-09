@@ -105,13 +105,6 @@ button{
     text-align: center;
 }
 
-.whats{
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    width: 100px;
-}
-
 
 @view-transition{
     navigation:auto
