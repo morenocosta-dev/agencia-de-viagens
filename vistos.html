@@ -11,216 +11,8 @@
     <meta name="theme-color" content="#0d3b66">
     <title>Vistos</title>
     <link rel="stylesheet" href="estilo.css">
-    <link rel="stylesheet" href="responsivel.css">
-<style>
-    .hero{
-    height:80vh;
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url("praia2.jpg");
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    color:white;
-}
-
-.hero h1{
-    font-size:55px;
-    margin-bottom:15px;
-}
-
-.hero p{
-    font-size:20px;
-}
-
-
-.titulo{
-    text-align: center;
-   
-}
-
-
-.galeria{
-    padding:70px 8%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
-    gap:30px;
-}
-
-.card{
-    background:#fff;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-    transition:.3s;
-    display:flex;
-    flex-direction:column;
-    height:100%;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card img{
-    width:100%;
-    height:150px;      /* Todas as imagens terão a mesma altura */
-    object-fit:cover;  /* Mantém a imagem bonita sem deformar */
-    display:block;
-}
-
-.info{
-    padding:20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    flex:1;
-    text-align:center;
-}
-
-.info h3{
-    color:#0066cc;
-    margin-bottom:10px;
-}
-
-.info p{
-    color:#666;
-    line-height:1.6;
-}
-
-@media (max-width:768px){
-
-.galeria{
-    grid-template-columns:1fr;
-    gap:20px;
-}
-
-.card img{
-   height: 150px;
-}
-
-}
-    
-    
-footer{
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-@media(max-width:768px){
-
-header{
-    flex-direction:column;
-}
-
-nav ul{
-    margin-top:15px;
-}
-
-.hero h1{
-    font-size:38px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-}
-
-
-   .footer{
-    background:#004999;
-    color:white;
-    padding:45px 8% 20px;
-    font-family:Arial, sans-serif;
-}
-
-
-.footer-container{
-    display:flex;
-    justify-content:space-between;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-
-.footer-col{
-    display:flex;
-    flex-direction:column;
-}
-
-
-.footer-col h3{
-    font-size:16px;
-    margin-bottom:15px;
-}
-
-
-.footer-col p{
-    margin:5px 0;
-    color:#c8c8c8;
-    font-size:14px;
-}
-
-
-.footer-col a{
-    text-decoration:none;
-    color:#c8c8c8;
-    margin:5px 0;
-    font-size:14px;
-}
-
-
-.social{
-    display:flex;
-    gap:12px;
-    margin:15px 0;
-}
-
-
-.social a{
-    width:28px;
-    height:28px;
-    border:1px solid #777;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:white;
-}
-
-
-.footer small{
-    color:#aaa;
-}
-
-
-.copyright{
-    border-top:1px solid #39464d;
-    text-align:center;
-    margin-top:35px;
-    padding-top:20px;
-    color:#aaa;
-    font-size:13px;
-}
-
-
-/* Responsivo */
-@media(max-width:700px){
-
-.footer-container{
-    flex-direction:column;
-}
-
-}
-</style>
-
 </head>
-<body>
+<body class="page-visas">
      <nav class="navbar">
 
     <img class="logo-img" src="logo.jpg">
@@ -257,16 +49,16 @@ menu.classList.toggle("ativo");
 </script>
 
 
- <section class="hero">
+ <section class="hero hero-page">
         <div class="hero-text">
-            <h1 style="font-family:Lobster, sans-ser;">Vistos Emitidos</h1>
+            <h1>Vistos Emitidos</h1>
             <p>Ao longo dos anos ajudámos centenas de clientes a realizar o sonho de viajar, estudar e trabalhar no exterior.</p>
             <p>Veja alguns dos vistos emitidos pela nossa empresa.</p>
         </div>
     </section>
 
 <div class="titulo">
-    <h1 style="margin-top: 100px;font-size: 60px;text-align: center;font-family:Lobster, sans-ser;color: #0d6efd;">Galeria de Serviços</h1>
+    <h1>Galeria de Serviços</h1>
     <p>Resultados reias dos nossos serviços</p>
 </div>
 
