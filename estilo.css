@@ -61,7 +61,7 @@ textarea {
     width: 100%;
     min-height: 75px;
     padding: 12px 5%;
-    border-bottom: 2px solid #0d6efd;
+   
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -98,29 +98,39 @@ textarea {
 }
 
 .menu a {
-    color: #111;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    padding: 15px 16px;
-    display: inline-block;
-    transition: .3s;
+    font-size: 17px;
+    padding: 13px 18px;
+    font-weight: 600;
+    padding: 13px 18px;
+    margin: 0;
+    color: black;
+    border-radius: 30px;
+    transition: .25s ease;
+
 }
 
 .menu a:hover {
-    color: #0d6efd;
-    border-bottom: 3px solid #180f4a;
+    color: #ffffff;
+    background: #003566;
 }
 
 #botao {
-    background: #0d6efd;
-    padding: 10px 25px;
+    background: #003566;
+    padding: 13px 18px;
     color: white;
     border-radius: 30px;
     margin-left: 10px;
     opacity: 1;
+    transition: 0.3s;
 }
 
 #botao:hover {
+    transform: translateY(-3px);
     border: none;
     opacity: .7;
 }
@@ -205,7 +215,7 @@ section {
 }
 
 .hero-home {
-    min-height: 100vh;
+    min-height: 90vh;
     justify-content: flex-start;
     text-align: left;
     padding: 120px 7% 80px;
